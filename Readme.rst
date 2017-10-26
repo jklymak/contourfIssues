@@ -81,10 +81,10 @@ Producing PNGs (and JPEG, etc)
 
 Here, the right answer is to almost always just use ``edgecolors='none'``:
 
-.. figure:: testcontour.pdf.png
+.. figure:: testcontour100.png
    :alt: example contour.pdf
 
    Countourf at different values of ``edgecolors`` and ``linewidths`` in a PNG
    rendered at 100 dpi by Matplotlib  `Original png`__.
 
-.. __: ./testcontour.png
+.. __: ./testcontour100.png
