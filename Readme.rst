@@ -11,6 +11,10 @@ of extra "gridlines" or lines around the boundaries of the contours.
    This is an example contourf PDF converted to png at 100 dpi to mimic
    what a screen would show.
 
+Note that this is just an issue with the PDF viewers.  Adobe Acrobat has
+an option to turn off "Smooth line art", and doing so removes the anti-aliasing
+and hence the white lines at the contour boundaries. 
+
 The same plot rendered by Matplotlib into a 100-dpi png does not have the
 extra whitish dashed lines around each contour
 
@@ -80,7 +84,7 @@ Producing PNGs (and JPEG, etc)
 ------------------------------
 
 Here, the right answer is to almost always just use ``edgecolors='none'``.
-Note, however, the poor performance when alpha is less than 1.  
+Note, however, the poor performance when alpha is less than 1.
 
 .. figure:: testcontour100.png
    :alt: example contour.pdf
