@@ -26,4 +26,12 @@ and apply anti-aliasing to their edges.  However, this is usually done
 per-polygon, so the first polygon with anti-aliasing doesn't know that
 it is going to be beside another polygon, so it anti-aliases with the
 white background of the figure.  The adjacent polygon does the same, and hence
-the pixels at the boudnary between the two polygons are lightened.  
+the pixels at the boudnary between the two polygons are lightened.  The same
+figure rendered with a black background yields dark lines between the
+contours.
+
+.. figure:: exampleContourBlack.pdf.png
+   :alt: example contour.pdf
+
+   This is an example contourf (converted to png at 100 dpi to mimic
+   what a screen would show).
