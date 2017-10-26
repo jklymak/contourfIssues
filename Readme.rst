@@ -79,7 +79,8 @@ the overlapping, because now your alpha value is doubled, likely over 1.0.
 Producing PNGs (and JPEG, etc)
 ------------------------------
 
-Here, the right answer is to almost always just use ``edgecolors='none'``:
+Here, the right answer is to almost always just use ``edgecolors='none'``.
+Note, however, the poor performance when alpha is less than 1.  
 
 .. figure:: testcontour100.png
    :alt: example contour.pdf
