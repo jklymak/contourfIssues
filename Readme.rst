@@ -40,10 +40,38 @@ contours.
 Note that at a fundamental level, this is *not* Matplotlib's fault.  If you
 rasterize the PDF produced by matplotlib at 300 dpi (i.e. using
 Imagemagick or another rasterizing tool), the anti-aliasing is
-not as noticeable.
+not as noticeable.  If you could turn anti-aliasing off for your
+PDF viewer, this problem would not occur.
 
 .. figure:: exampleContour.pdf.300.png
    :alt: example contour.pdf
    :scale: 33 %
 
    This is an example contourf PDF converted to png at 300 dpi.
+
+What to do?
+===========
+
+What should be done depends on your application.
+
+Producing PDFs (and EPS, SVG)
+-----------------------------
+
+If you are producing PDF
+files, setting the ``edgecolor='face'`` option in ``contourf`` and setting
+the ``linewidths=0.2`` yields a good result on a 200-dpi monitor.  Of course
+this means that the underlying polygons are now overlapping by 0.07 mm.
+That is not too likely a problem for normal viewing, but if contours are
+being zoomed in on to a very high level that will cause some distortion of the
+exact boundaries.
+
+If you are using alpha values in your contours, then there is a problem with
+the overlapping, because now your alpha value is doubled, likely over 1.0.
+
+.. figure:: testcontour.pdf.png
+   :alt: example contour.pdf
+
+   Countourf at different values of ``edgecolors`` and ``linewidths`` in a PDF
+   converted to 100 dpi png for display here.  `Original pdf`__.
+
+   __./testcontour.pdf
