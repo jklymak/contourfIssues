@@ -75,3 +75,16 @@ the overlapping, because now your alpha value is doubled, likely over 1.0.
    converted to 100 dpi png for display here.  `Original pdf`__.
 
 .. __: ./testcontour.pdf
+
+Producing PNGs (and JPEG, etc)
+------------------------------
+
+Here, the right answer is to almost always just use ``edgecolors='none'``:
+
+.. figure:: testcontour.pdf.png
+   :alt: example contour.pdf
+
+   Countourf at different values of ``edgecolors`` and ``linewidths`` in a PNG
+   rendered at 100 dpi by Matplotlib  `Original png`__.
+
+.. __: ./testcontour.png
