@@ -2,8 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import subprocess
 
-fig, axs =  plt.subplots(1, 1, figsize=(2.5, 4))
-
+fig, axs =  plt.subplots(1, 1, figsize=(4, 2.5))
+fig.subplots_adjust(top=0.8)
 Z = np.array([[1.,2.,3.],[1., 2., 4.],[2, 3.,4.]])
 ax = axs
 ax.contourf(Z, vmin=0., vmax=10., edgecolors='none')
