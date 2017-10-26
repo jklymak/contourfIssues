@@ -8,8 +8,8 @@ of extra "gridlines" or lines around the boundaries of the contours.
 .. figure:: exampleContour.pdf.png
    :alt: example contour.pdf
 
-   This is an example contourf (converted to png at 100 dpi to mimic
-   what a screen would show).
+   This is an example contourf PDF converted to png at 100 dpi to mimic
+   what a screen would show.
 
 The same plot rendered by Matplotlib into a 100-dpi png does not have the
 extra whitish dashed lines around each contour
@@ -34,4 +34,15 @@ contours.
    :alt: example contour.pdf
 
    This is an example contourf (converted to png at 100 dpi to mimic
-   what a screen would show).
+   what a screen would show) but with the background black. Note that
+   contour interfaces are now dark.
+
+Note that at a fundamental level, this is *not* Matplotlib's fault.  If you
+rasterize the PDF produced by matplotlib at 300 dpi (i.e. using
+Imagemagick or another rasterizing tool), the anti-aliasing is
+not as noticeable.
+
+.. figure:: exampleContour.pdf.300.png
+   :alt: example contour.pdf
+
+   This is an example contourf PDF converted to png at 300 dpi.

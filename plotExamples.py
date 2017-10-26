@@ -15,6 +15,9 @@ fig.suptitle('PDF')
 fig.savefig('exampleContour.pdf')
 subprocess.call(['convert','-density', '100',
         'exampleContour.pdf', 'exampleContour.pdf.png'])
+
+subprocess.call(['convert','-density', '300',
+        'exampleContour.pdf', 'exampleContour.pdf.300.png'])
 fig.suptitle('PNG')
 fig.savefig('exampleContour.png', dpi=100)
 
