@@ -74,4 +74,4 @@ the overlapping, because now your alpha value is doubled, likely over 1.0.
    Countourf at different values of ``edgecolors`` and ``linewidths`` in a PDF
    converted to 100 dpi png for display here.  `Original pdf`__.
 
-   __./testcontour.pdf
+.. __: ./testcontour.pdf
