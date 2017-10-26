@@ -22,4 +22,4 @@ ax.set_facecolor('k')
 fig.suptitle('PDF')
 fig.savefig('exampleContourBlack.pdf', facecolor='k')
 subprocess.call(['convert','-density', '100',
-        'exampleContour.pdf', 'exampleContourBlack.pdf.png'])
+        'exampleContourBlack.pdf', 'exampleContourBlack.pdf.png'])
