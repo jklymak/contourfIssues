@@ -44,6 +44,6 @@ not as noticeable.
 
 .. figure:: exampleContour.pdf.300.png
    :alt: example contour.pdf
-   :scale: 33.3%
+   :scale: 33 %
 
    This is an example contourf PDF converted to png at 300 dpi.
