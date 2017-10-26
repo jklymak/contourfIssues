@@ -17,3 +17,9 @@ subprocess.call(['convert','-density', '100',
         'exampleContour.pdf', 'exampleContour.pdf.png'])
 fig.suptitle('PNG')
 fig.savefig('exampleContour.png', dpi=100)
+
+ax.set_facecolor('k')
+fig.suptitle('PDF')
+fig.savefig('exampleContourBlack.pdf', facecolor='k')
+subprocess.call(['convert','-density', '100',
+        'exampleContour.pdf', 'exampleContourBlack.pdf.png'])
