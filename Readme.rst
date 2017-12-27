@@ -15,6 +15,10 @@ Note that this is just an issue with the PDF viewers.  Adobe Acrobat has
 an option to turn off "Smooth line art", and doing so removes the anti-aliasing
 and hence the white lines at the contour boundaries. 
 
+See this comment_.
+
+.._comment: https://github.com/matplotlib/matplotlib/issues/9574#issuecomment-339532262
+
 The same plot rendered by Matplotlib into a 100-dpi png does not have the
 extra whitish dashed lines around each contour
 
